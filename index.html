@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+    <style>
+   
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+        }
+        
+        #top{
+            background-color: #212529;
+            width:auto;
+            color:white;
+            display: flex;
+            line-height: 50px;
+            justify-content: space-between;
+            padding:0 100px;
+
+        }
+        #top ul{
+            display: flex;
+            list-style-type: none;
+            
+        }
+        #top h2{   
+            font-size: 1.25rem;
+            font-weight: normal;
+            padding-top: 0.3125rem;
+            padding-bottom: 0.3125rem;  
+        }
+        #top ul li{
+            margin-right: 10px;
+            color:rgba(255,255,255,.55);
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+           
+           
+        }
+        #top ul li:hover{
+            color: rgb(205, 205, 205);
+        }
+        #main{
+            background-color: #212529;
+            display: flex;
+            padding:0 100px;
+          
+
+        }
+        #main-left{
+            width:65%;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            line-height: 1.2;
+            color: white;
+           
+        }
+        #main-left h2{
+            font-size: 2.5rem;
+           margin-top: 150px;
+           font-weight: normal;
+        }
+        .text-warning{
+            color:#ffc107!important;
+        }
+        #main-left  p{
+            margin-top: 1.5rem !important;
+            margin-bottom: 1.5rem !important;
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+        #main-left button{
+            padding: .5rem 1rem;
+            font-size: 1.25rem;
+            color: #fff;
+            background-color: #0b5ed7;
+            border-color: #0b5ed7; 
+          
+        }
+        #main-left button:hover{
+            box-shadow: 0 0 0 .1rem rgba(49,132,253,.5);
+        }
+        #main-right{
+            width:35%;
+            
+        }
+        #main-right img{
+            width:100%;
+        }
+        #h2{
+            color: white;
+        }
+
+        #main p{
+            color: white;
+        }
+        #navban{
+            width: auto;
+            background: #0d6efd;
+            color: white;
+            padding: 45px 20px;
+            font-size: 1.75rem;
+        }
+        #three{
+            padding:0 100px;
+            display: flex;
+            margin-top: 50px;
+            color: white;
+        }
+        #three>div{
+            padding:10px 30px;
+            text-align: center;
+           
+        }
+        #left{
+            background-color: #212529;
+            margin-right: 50px;
+        }
+        #mid{
+            background-color: #6c757d;
+            margin-right: 50px;
+        }
+        #right{
+            background-color: #212529;
+        }
+        #left a,#right a{
+            background-color: #2069b3;
+            text-decoration: none;
+            color:white;
+            display:inline-block;
+            padding:10px 20px;
+            margin-top:20px;
+        }
+        #mid a{
+            background-color: black;
+            text-decoration: none;
+            color: white;
+            display:inline-block ;
+            padding:10px 20px;
+            margin-top:20px;
+        }
+        @media(max-width:768px){
+            #main{
+                flex-direction: column;
+            }
+            #main-right img{
+            margin-left: 100px;
+            width:120%;
+            }
+            #top{
+                flex-direction: column;
+            }
+            #top ul{
+                margin-left: 100px;
+                margin-right: 0;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h2>        Frontend Bootcamp
+        </h2>
+        <ul>
+            <li>Learning</li>
+            <li>questions</li>
+            <li>instructor</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+    <div id="main">
+        <div id="main-left">
+         <h2> Become a Web <span class="text-warning">Developer</span> </h2>  
+            <p>
+
+                we focus on teaching our students the latest and greatest technologies to prepare them for the first role. 
+
+            </p>
+            <button >
+                start enrollment
+            </button>
+        </div>
+        <div id="main-right">
+
+            <img src="./family-confirming-evacuation-site-svgrepo-com.svg" alt="">
+
+        </div>
+    </div><!--end of main-->
+    <div id="navban">
+        sign in for our newsletter
+    </div>
+    <div id="three">
+        <div id="left">
+            <h2>virtual</h2>  
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facilis placeat ad atque cumque illo.</p>
+            <a href="https://wqx059.github.io/1213-1/wangye">read more</a>
+        </div>
+        <div id="mid">
+            <h2>Hybird</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad esse minus saepe totam nobis.</p>
+            <a href="https://wqx059.github.io/1205/todos -plain">read more</a>
+        </div>
+        <div id="right">
+            <h2>
+                In person 
+            </h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum natus illum hic et ipsum, asperiores adipisci.
+            </p>
+            <a href="https://wqx059.github.io/1213-2/calculator">read more</a> 
+        </div>
+       
+    </div>
+</body>
+</html>
